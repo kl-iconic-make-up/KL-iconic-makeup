@@ -18,19 +18,11 @@ body {
     position: relative;
     z-index: 1;
 }
-    
-<nav style="text-align:center; padding:15px;">
-    <a href="index.html" class="btn">Inicio</a>
-    <a href="nosotros.html" class="btn">Nosotros</a>
-    <a href="productos.html" class="btn">Productos</a>
-    <a href="contacto.html" class="btn">Contacto</a>
-</nav>
 
-<!-- LOGO -->
-<div class="logo-container">
-    <img src="Logo%20Loren.PNG" alt="Logo">
-</div>
-    
+section, .logo-container, footer {
+    position: relative;
+    z-index: 2;
+}
     /* ESTRELLAS ORO ROSA EN TODA LA PANTALLA */
 body::before {
     content: "";
@@ -157,3 +149,213 @@ Pedir Catálogo
 </a>
 </section>
 
+<!-- NOSOTROS -->
+<section>
+<h2>Sobre Nosotros</h2>
+
+<p>En Iconic Make-up encontrarás marcas reconocidas, tonos increíbles y productos cuidadosamente seleccionados para realzar tu belleza y brindarte una experiencia única, segura y con resultados profesionales✨.</p>
+<p>Nuestro objetivo es ayudarte a que te sientas segura, auténtica y hermosa en cada ocasión.💅</p>
+<p>Te damos una atención personalizada y te asesoramos para un resultado impecable.😌👌🏼 </p>
+<p> KL iconec make up no es solo una tienda de maquillaje. Es estilo, cuidado y belleza.💄👄 <p> 
+        
+</section>
+
+<!-- PRODUCTOS + CARRITO -->
+<section>
+<h2>Productos</h2>
+
+
+    <div class="card">
+    <h3>Base y corrector Ani-K</h3>
+    <p>$50.000</p>
+    <button onclick="agregar('Base y corrector Ani-K')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Bronzer Rare Beauty</h3>
+    <p>$40.000</p>
+    <button onclick="agregar('Bronzer Rare Beauty')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Bronzer Bloomshells</h3>
+    <p>$35.000</p>
+    <button onclick="agregar('Bronzer Bloomshells')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Bronzer Atenea</h3>
+    <p>$45.000</p>
+    <button onclick="agregar('Bronzer Atenea')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Blush Atenea</h3>
+    <p>$33.000</p>
+    <button onclick="agregar('Blush Atenea')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Blush Dior</h3>
+    <p>$110.000</p>
+    <button onclick="agregar('Blush Dior')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Blush cremoso Rhode</h3>
+    <p>$50.000</p>
+    <button onclick="agregar('Blush cremoso Rhode')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Blush líquido Rare Beauty</h3>
+    <p>$50.000</p>
+    <button onclick="agregar('Blush líquido Rare Beauty')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Iluminador líquido Rare Beauty</h3>
+    <p>$45.000</p>
+    <button onclick="agregar('Iluminador líquido Rare Beauty')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Corrector Bloomshell</h3>
+    <p>$30.000</p>
+    <button onclick="agregar('Corrector Bloomshell')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Corrector Ani-K</h3>
+    <p>$25.000</p>
+    <button onclick="agregar('Corrector Ani-K')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Pestañina Prosa</h3>
+    <p>$28.000</p>
+    <button onclick="agregar('Pestañina Prosa')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Polvo suelto Ruby Rose</h3>
+    <p>$35.000</p>
+    <button onclick="agregar('Polvo suelto Ruby Rose')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Polvo suelto One Size</h3>
+    <p>$100.000</p>
+    <button onclick="agregar('Polvo suelto One Size')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Lip gloss Rhode</h3>
+    <p>$30.000</p>
+    <button onclick="agregar('Lip gloss Rhode')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Lip gloss Rare Beauty</h3>
+    <p>$40.000</p>
+    <button onclick="agregar('Lip gloss Rare Beauty')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Tinta para labios Benefit</h3>
+    <p>$30.000</p>
+    <button onclick="agregar('Tinta para labios Benefit')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Fijador One Size</h3>
+    <p>$90.000</p>
+    <button onclick="agregar('Fijador One Size')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Bruma Sol de Janeiro</h3>
+    <p>$80.000</p>
+    <button onclick="agregar('Bruma Sol de Janeiro')">Agregar</button>
+</div>
+
+<div class="card">
+    <h3>Aceite corporal Sol de Janeiro</h3>
+    <p>$90.000</p>
+    <button onclick="agregar('Aceite corporal Sol de Janeiro')">Agregar</button>
+</div>
+
+
+
+</section>
+
+<!-- CARRITO -->
+<section>
+<h2>Carrito</h2>
+<div id="carrito"></div>
+
+<button class="btn" onclick="enviar()">Enviar pedido por WhatsApp</button>
+</section>
+
+<!-- CONTACTO -->
+<section>
+<h2>Contacto</h2>
+<p>📱 3208518781</p>
+<p>📍 Cl 17 #20-76 BR boyaca,Tame, Arauca</p>
+<p>📩 weblomar38@gmail.com</p>
+</section>
+
+<!-- PAGOS -->
+<section>
+<h2>Pagos</h2>
+
+<div class="card">
+Daviplata<br>
+Karol Yulieth Contreras<br>
+3214405130
+</div>
+
+<div class="card">
+Llave Bre-B<br>
+Karol Yulieth Contreras<br>
+1116861917
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 KL Iconic Make-up</p>
+</footer>
+
+<!-- SCRIPT CARRITO -->
+<script>
+let carrito = [];
+
+function agregar(producto){
+    carrito.push(producto);
+    mostrar();
+}
+
+function mostrar(){
+    let c = document.getElementById("carrito");
+    c.innerHTML = "";
+    carrito.forEach(p => {
+        c.innerHTML += "<p>🛍️ " + p + "</p>";
+    });
+}
+
+function enviar(){
+    if(carrito.length === 0){
+        alert("Carrito vacío");
+        return;
+    }
+
+    let mensaje = "Hola, quiero pedir:\n";
+    carrito.forEach(p => mensaje += "- " + p + "\n");
+
+    window.open("https://wa.me/573208518781?text=" + encodeURIComponent(mensaje));
+}
+</script>
+
+</body>
+</html>
