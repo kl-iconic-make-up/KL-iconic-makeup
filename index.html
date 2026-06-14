@@ -12,6 +12,32 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
+    body {
+    position: relative;
+    z-index: 1;
+}
+    /* DESTELLOS DORADOS */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-image: radial-gradient(circle, rgba(255,215,0,0.4) 2px, transparent 2px);
+    background-size: 50px 50px;
+    animation: sparkle 20s linear infinite;
+    z-index: 0;
+}
+
+@keyframes sparkle {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-200px, -200px);
+    }
+}
 
 /* LOGO GRANDE */
 .logo-container {
@@ -91,10 +117,10 @@ Pedir Catálogo
 <h2>Sobre Nosotros</h2>
 
 <p>
-
-En Iconic Make-up encontrarás marcas reconocidas, tonos increíbles y productos cuidadosamente seleccionados para realzar tu belleza y brindarte una experiencia única, segura y con resultados profesionales.
-
-Nuestro objetivo es ayudarte a que te sientas segura, auténtica y hermosa en cada ocasión.✨
+                <p> En Iconic Make-up encontrarás marcas reconocidas, tonos increíbles y productos cuidadosamente seleccionados para realzar tu belleza y brindarte una experiencia única, segura y con resultados profesionales. </p>
+                <p> Nuestro objetivo es ayudarte a que te sientas segura, auténtica y hermosa en cada ocasión. </p>
+                <p> Enviamos a toda Colombia y trabajamos todos los días, te damos una atención personalizada y te asesoramos para un resultado impecable. </p>
+                <p> KL iconec make up  no es solo una tienda de maquillaje. Es estilo, cuidado y belleza.</p>
 
 </p>
 
